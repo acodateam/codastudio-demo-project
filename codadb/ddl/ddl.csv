@@ -1,0 +1,16 @@
+tableName,columnName,columnId,type,length,length2,comment,dataDefault,notNull,tableComment,dataset,javaType
+group,group id,group_id,int,11,0,null,null,true,null,integer,Long
+group,group name,group_name,varchar,50,0,null,NULL,false,null,string,String
+group,description,description,varchar,500,0,null,NULL,false,null,string,String
+group,0: group mở 1: group kín,privacy,tinyint,4,0,null,0,false,null,DATASET_privacy,Integer
+group,avatar of group,cover_image_url,varchar,100,0,null,NULL,false,null,string,String
+group,create date,create_date,datetime,0,0,null,NULL,false,null,datetime,String
+group,update date,update_date,datetime,0,0,null,NULL,false,null,datetime,String
+group,0: not delete 1: delete,delete_flag,bit,1,0,null,null,true,null,boolean,Boolean
+group_member,group member id,group_member_id,int,11,0,null,null,true,null,integer,Long
+group_member,group id,group_id,int,11,0,null,null,true,null,integer,Long
+group_member,0: member 1: admin,role_group,tinyint,4,0,null,0,false,null,integer,Integer
+group_member,member id,user_id,int,11,0,null,null,true,null,integer,Long
+group_member,create date,create_date,datetime,0,0,null,NULL,false,null,datetime,String
+group_member,update date,update_date,datetime,0,0,null,NULL,false,null,datetime,String
+group_member,0: not delete 1: delete,delete_flag,bit,1,0,null,null,true,null,boolean,Boolean
